@@ -1,0 +1,15 @@
+.Friends {
+  color: blueviolet;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.Friends_title {
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.Friends_list {
+  display: flex;
+  justify-content: space-between;
+}

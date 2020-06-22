@@ -1,0 +1,10 @@
+.Sidebar {
+  grid-area: n;
+  background-color: burlywood;
+}
+
+.friendsBlock {
+  display: flex;
+  flex-direction: column;
+}
+
