@@ -1,11 +1,11 @@
 .Friends {
-  color: blueviolet;
   font-size: 20px;
   display: flex;
   flex-direction: column;
 }
 .Friends_title {
-  color: aliceblue;
+  margin: 0 auto;
+  color: goldenrod;
   font-size: 25px;
 }
 

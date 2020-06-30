@@ -8,7 +8,7 @@ const Sidebar = (props) => {
   return (
     <div className={s.Sidebar}>
       <div className={s.friendsBlock}>
-        <Friends state={props.state.sidebar}/>
+        <Friends state={props.state}/>
       </div>
     </div>
   )

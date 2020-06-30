@@ -1,6 +1,7 @@
 .Sidebar {
   grid-area: n;
-  background-color: burlywood;
+  margin-top: 200px;
+  width: 80%;
 }
 
 .friendsBlock {
