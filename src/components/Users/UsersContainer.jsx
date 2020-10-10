@@ -12,31 +12,43 @@ let mapStateToProps = (state) => {
   }
 }
 
-let mapDispatchToProps = (dispatch) => {
-  return {
-    follow: (userId) => {
-      dispatch(followAC(userId))
-    },
+// let mapDispatchToProps = (dispatch) => {
+//   return {
+//     follow: (userId) => {
+//       dispatch(followAC(userId))
+//     },
 
-    unfollow: (userId) => {
-      dispatch(unFollowAC(userId))
-    },
+//     unfollow: (userId) => {
+//       dispatch(unFollowAC(userId))
+//     },
 
-    setUsers: (users) => {
-      dispatch(setUsersAC(users));
-    },
+//     setUsers: (users) => {
+//       dispatch(setUsersAC(users));
+//     },
 
-    setCurrentPage: (pageNumber) => {
-      dispatch(setCurrentPageAC(pageNumber))
-    },
+//     setCurrentPage: (pageNumber) => {
+//       dispatch(setCurrentPageAC(pageNumber))
+//     },
 
-    setTotalUsersCount: (totalCount) => {
-      dispatch(setUsersTotalCountAC(totalCount))
-    },
+//     setTotalUsersCount: (totalCount) => {
+//       dispatch(setUsersTotalCountAC(totalCount))
+//     },
 
-    toggleIsFetching: (isFetching) => {
-      dispatch(toggleIsFetchingAC(isFetching))
-    },
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(UsersAPIComponent);
+//     toggleIsFetching: (isFetching) => {
+//       dispatch(toggleIsFetchingAC(isFetching))
+//     },
+//   }
+// }
+
+
+export default connect(mapStateToProps, {
+  follow : followAC,
+  unfollow: unFollowAC,
+  setUsers: setUsersAC,
+  setCurrentPage: setCurrentPageAC,
+  setTotalUsersCount: setUsersTotalCountAC,
+  toggleIsFetching: toggleIsFetchingAC,
+
+})(UsersAPIComponent);
+
+// export default connect(mapStateToProps, mapDispatchToProps)(UsersAPIComponent);
